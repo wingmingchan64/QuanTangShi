@@ -20,14 +20,22 @@ for( $i = 1; $i<=900; $i++ )
 	file_put_contents( $text_path . $文檔碼 . '.txt',
 		'' );
 }
-/*
-$卷 = '';
-$數 = 57;
 
-$text_path = dirname( __DIR__, 2 ) .
+$卷 = '424';
+$數 = 0;
+
+$source_path = dirname( __DIR__, 2 ) .
+	DIRECTORY_SEPARATOR .
+	'raw_txt' . DIRECTORY_SEPARATOR;
+$target_path = dirname( __DIR__, 2 ) .
 	DIRECTORY_SEPARATOR .
 	'canonical_txt' . DIRECTORY_SEPARATOR;
 
+$contents = file_get_contents(
+	$source_path . $卷 . '.txt' );
+echo $contents;
+
+/*
 for( $i = 1; $i<=$數; $i++ )
 {
 	$文檔碼 = str_pad( $卷, 3, '0', STR_PAD_LEFT ) . 
