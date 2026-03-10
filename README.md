@@ -1,2 +1,6 @@
-# QuanTangShi
-Collect data from 《全唐詩》 and create base text trees.
+# QuanTangShi 《全唐詩》 
+
+在處理杜甫詩的時候，讓我看到基準正文樹的巨大潛力。這裏搜集了兩類文檔：
+
+- 從 Wikipedia 來的、未經校對的詩文
+- 把詩文轉變成基準正文樹
