@@ -26,6 +26,11 @@ $contents = preg_replace( $ptn, '', $contents );
 $ptn = '/\[頁]卷,冊....\d+,\d+/u';
 $contents = preg_replace( $ptn, '', $contents );
 
+// 加 *
+$ptn = '/\R\R\R/u';
+$contents = preg_replace( $ptn, "\n*\n", $contents );
+$contents = str_replace( '。。', '。', $contents );
+
 $異體字 = json_decode( file_get_contents('H:\github\QuanTangShi\tools\php\異體字.json' ), true );
 
 $keys = array_keys( $異體字 );
