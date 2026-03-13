@@ -120,7 +120,7 @@ function write_member_tree_files(
 		// 副題
         foreach( $value as $line_no => $subtitle )
         {
-			$line_no => $subtitle
+			print_r( $value );
             $subtitle_lines[ (int)$poem_no ] = [
                 'line' => (int)$line_no,
                 'subtitle' => $subtitle
